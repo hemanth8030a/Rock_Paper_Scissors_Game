@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h1>Rock Paper Scissors</h1>
+            <div class="input-container">
+                <input type="text" id="player-name" placeholder="Enter your name">
+                <button id="start-btn">Start Game</button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="hidden">
+            <!-- Score Board -->
+            <div class="score-board">
+                <div class="player-score">
+                    <p id="player-name-display">Player</p>
+                    <p id="player-score">0</p>
+                </div>
+                <div class="computer-score">
+                    <p>Computer</p>
+                    <p id="computer-score">0</p>
+                </div>
+            </div>
+
+            <!-- Result Message -->
+            <div id="result-message"></div>
+
+            <!-- Choices -->
+            <div class="choices">
+                <button class="choice" data-choice="rock">✊</button>
+                <button class="choice" data-choice="paper">✋</button>
+                <button class="choice" data-choice="scissors">✌️</button>
+            </div>
+
+            <!-- Game Result -->
+            <div id="game-result" class="hidden">
+                <div class="result-choices">
+                    <div class="result-choice">
+                        <p>Your Choice</p>
+                        <div id="player-choice"></div>
+                    </div>
+                    <div class="result-choice">
+                        <p>Computer's Choice</p>
+                        <div id="computer-choice"></div>
+                    </div>
+                </div>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
